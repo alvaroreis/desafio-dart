@@ -11,6 +11,8 @@ https://servicodados.ibge.gov.br/api/v1/localidades/estados
 https://servicodados.ibge.gov.br/api/v1/localidades/estados/ID_ESTADO/distritos'
 ```
 
+`OBS: Edite o arquivo database.dart com as informações do seu banco de dados MySQL.`
+
 **Script de criação das tabelas:**
 ```sql
 CREATE TABLE estado (
@@ -27,5 +29,3 @@ CREATE TABLE cidade (
       REFERENCES estado(id)
 );​
 ```
-
-`Edite o arquivo database.dart com as informações do seu banco de dados MySQL.`
